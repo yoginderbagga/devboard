@@ -33,7 +33,6 @@ jobs:
           tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard-${{ matrix.folders }}:latest
           # Keeps the cache disabled so your new text updates are compiled fresh
           no-cache: true 
-          no-cache-filters: |
-            development
+          
  
 #
