@@ -1,6 +1,4 @@
-# Goal Push the images to DockerHub 
-#
-# Goal Push the images to DockerHub
+# Goal Push the images to DockerHub# Goal Push the images to DockerHub
 name: Docker Push
 
 on:
@@ -29,12 +27,11 @@ jobs:
       - name: Docker Build and Push
         uses: docker/build-push-action@v7
         with:
-          # Keep the context at the repository root so it can see everything
-          context: .
-          # Explicitly point to the Dockerfile inside the matrix folder
-          file: ./${{ matrix.folders }}/Dockerfile
+          # Restore the original folder context so files like go.sum are found cleanly
+          context: ./${{ matrix.folders }}
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard-${{ matrix.folders }}:latest
-          # Forces Docker to ignore old cloud runner caches and compile fresh code
+          # Keeps the cache disabled so your new text updates are compiled fresh
           no-cache: true 
-
+ 
+#
