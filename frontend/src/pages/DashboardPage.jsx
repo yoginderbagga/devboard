@@ -36,7 +36,7 @@ export function DashboardPage() {
 
         
 
-          <h1 className="text-[30px] font-semibold leading-none tracking-[-0.6px]">Good to see you, Yoginder Bagga Updated with Pipeline on 7th August 2026</h1>
+          <h1 className="text-[30px] font-semibold leading-none tracking-[-0.6px]">Good to see you, Yoginder Bagga Updated with Pipeline is LIVE NOW  7th August 2026</h1>
           <p className="text-[14px] text-ink-600 dark:text-ink-400 mt-2">
             Here's where your work stands today.
           </p>
