@@ -36,7 +36,7 @@ export function DashboardPage() {
 
         
 
-          <h1 className="text-[30px] font-semibold leading-none tracking-[-0.6px]">Good to see you, Yoginder Bagg - DevOPS with Pipeline is LIVE NOW TODAY AT  8th August 2026</h1>
+          <h1 className="text-[30px] font-semibold leading-none tracking-[-0.6px]">Good to see you, Yogi - Last Update 8th August - 2:53 AM</h1>
           <p className="text-[14px] text-ink-600 dark:text-ink-400 mt-2">
             Here's where your work stands today.
           </p>
